@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: tounch;
+  font-family: "Mulish", sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #E8ECF3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.alert {
+  top: 20px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 18px 42px;
+  background: #0c1226;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.alert.active {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+h3 {
+  margin-top: 90px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #0c1226;
+}
+
+ul.color-palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -15px;
+}
+
+ul.color-palette li {
+  width: 207px;
+  height: 329px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 0px 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  position: relative;
+  top: 0px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+ul.color-palette li:hover {
+  top: -10px;
+  -webkit-box-shadow: 0 15px 42px -12px #a8b2c3;
+          box-shadow: 0 15px 42px -12px #a8b2c3;
+}
+
+ul.color-palette li input {
+  position: absolute;
+  opacity: 0;
+  left: -99999px;
+}
+
+ul.color-palette li .color {
+  width: 100%;
+  height: 251px;
+  background: var(--color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+ul.color-palette li .text {
+  text-align: center;
+}
+
+.action {
+  text-align: center;
+}
+
+.action button {
+  width: 393px;
+  height: 68px;
+  background-color: #7e6cca;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.action p {
+  font-size: 18px;
+  color: #0c1226;
+  line-height: 29px;
+}
+
+.shurtcut-text {
+  background: #fff;
+  padding: 9px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #0c1226;
+}
+/*# sourceMappingURL=style.css.map */
